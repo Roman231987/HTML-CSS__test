@@ -1,0 +1,48 @@
+@use "../../index.scss" as *;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  color: $text-color;
+  padding: 3rem 4rem 4rem 3.8rem;
+  margin: 0 4rem 0 7.1rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  box-shadow: 0px 50px 70px -30px rgba(226, 236, 249, 0.5);
+  @include raspoond(tab-land_1240px) {
+    margin: 0 4rem 0 5rem;
+  }
+  &__text {
+    color: rgb(181, 183, 192);
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  &__btn {
+    display: flex;
+    gap: 1.2rem;
+  }
+  .button {
+    width: 2.5rem;
+    height: 2.4rem;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 0.4rem;
+    background: rgb(245, 245, 245);
+    color: rgb(64, 75, 82);
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    &:hover {
+      border-radius: 0.4rem;
+      background: rgb(89, 50, 234);
+      color: rgb(255, 255, 255);
+      &:hover * {
+        fill: white;
+      }
+    }
+  }
+}

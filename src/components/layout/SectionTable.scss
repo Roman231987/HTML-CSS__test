@@ -1,0 +1,33 @@
+@use "../../index.scss" as *;
+.sectionInfo {
+  .table {
+    width: 96.8rem;
+    height: 58.7rem;
+    padding: 0 4.4rem 0 3.8rem;
+  }
+  th {
+    text-align: left;
+    color: rgb(181, 183, 192);
+    border-bottom: 1px solid rgb(238, 238, 238);
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  td {
+    border-bottom: 1px solid rgb(238, 238, 238);
+    color: rgb(41, 45, 50);
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  .center {
+    padding-left: 1.5rem;
+  }
+  .inactive {
+    border: 1px solid rgb(223, 4, 4);
+    border-radius: 0.4rem;
+    background: rgb(255, 197, 197);
+    color: rgb(223, 4, 4);
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,18 @@
+@use "../src/index.scss" as *;
+
+.container {
+  width: 100%;
+  height: 119.8rem;
+  display: flex;
+  padding-right: 10rem;
+}
+.main {
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  background: rgb(255, 255, 255);
+  margin: 5.1rem 4rem 0 7.1rem;
+  @include raspoond(tab-land_1240px) {
+    margin: 5rem 4rem 0 5rem;
+  }
+}

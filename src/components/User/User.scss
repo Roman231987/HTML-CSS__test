@@ -1,0 +1,26 @@
+@use "/src/index.scss" as *;
+
+.user {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.2rem;
+  padding: 0 0 7.6rem 2.8rem;
+  flex: 1 auto;
+  @include raspoond(tab-land_1240px) {
+    padding: 0 0 7.6rem 2rem;
+  }
+  &__img {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+  &__name {
+    color: $text-color;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  &__status {
+    color: rgb(117, 117, 117);
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}
